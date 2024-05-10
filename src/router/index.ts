@@ -21,10 +21,10 @@ const routes: Array<RouteRecordRaw> = [
                 component: () => import("../view/user/index.vue"),
             },
             {
-                path: '/depatment',
+                path: '/department',
                 name: 'dp',
                 meta: {name: '部门管理',icon: 'Document'},
-                component: () => import("../view/depatment/index.vue"),
+                component: () => import("../view/department/index.vue"),
             },
             {
                 path: '/flowChart',
@@ -32,6 +32,12 @@ const routes: Array<RouteRecordRaw> = [
                 meta: {name: '流程图',icon: 'Document'},
                 component: () => import("../view/flowChart/index.vue"),
             },
+            {
+              path: '/test',
+              name: 'test',
+              meta: {name: '测试',icon: 'Document'},
+              component: () => import("../view/test/index.vue"),
+          },
         ]
     },
     {
